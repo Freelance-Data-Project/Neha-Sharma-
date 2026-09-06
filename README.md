@@ -20,7 +20,7 @@
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1027132056719027');
+    fbq('init', '');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
@@ -33,7 +33,7 @@
 
   <div class="top-banner">
     Don't have <strong>Telegram</strong> yet?
-    <a href="https://telegram.me/NEHA_BOOK_PUBLICATION2">Try it now</a>
+    <a t.me/https://t.me/NEHA_BOOK_PUBLICATION_11/">Try it now</a>
   </div>
 
   <div class="header">
@@ -45,7 +45,7 @@
 
   <!-- Join Button -->
  <a target="_blank"
-   href="https://telegram.me/NEHA_BOOK_PUBLICATION_11"
+   href="https://NEHA_BOOK_PUBLICATION_11/"
    class="telegram-button"
    id="telegramBtn">
    Apply on Telegram
@@ -152,7 +152,7 @@
   <div class="timer" id="countdown">00 Min 59 Sec ⏳ Hurry, Limited Seats!</div>
   <p>If you have <strong>Telegram</strong> you can view and apply,
     <span class="highlight">
-      <a href="https://telegram.me/NEHA_BOOK_PUBLICATION_11" style="text-decoration: none; color: #00aaff;">
+      <a href="https://t.me/NEHA_BOOK_PUBLICATION2" style="text-decoration: none; color: #00aaff;">
         Freelance Data Solution
       </a>
     </span>
