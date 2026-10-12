@@ -1,0 +1,64 @@
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#eefbff,#f7fbff 45%,#eaf8ff);
+  color:#07194b;
+}
+.page{min-height:100vh;padding:18px 12px 40px}
+.hero-card{
+  width:min(820px,100%);margin:auto;background:rgba(255,255,255,.92);
+  border-radius:28px;padding:20px 18px 24px;box-shadow:0 18px 55px rgba(0,100,180,.16);
+  overflow:hidden;
+}
+.online{
+  width:max-content;max-width:100%;margin:0 auto 16px;padding:11px 22px;border-radius:30px;
+  background:#e8fff0;color:#11752f;font-weight:800;font-size:18px;
+}
+.online span{display:inline-block;width:13px;height:13px;border-radius:50%;background:#17c65b;margin-right:8px;box-shadow:0 0 12px #17c65b}
+.profile-wrap{display:flex;justify-content:center}
+.reference-image{
+  width:min(100%,760px);height:auto;border-radius:22px;display:block;
+  box-shadow:0 8px 25px rgba(0,125,220,.12);
+}
+h1{text-align:center;font-size:clamp(34px,8vw,58px);margin:18px 0 0;letter-spacing:1px;color:#071b56}
+.role{text-align:center;color:#126be4;font-size:clamp(24px,5vw,38px);font-weight:900;margin-top:-2px}
+.headline{text-align:center;color:#1167dc;font-weight:800;font-size:clamp(18px,4vw,28px);margin-top:10px}
+.stars{text-align:center;color:#f4a900;font-size:36px;letter-spacing:3px;margin-top:5px}
+.rating{text-align:center;color:#777;font-weight:700;font-size:19px;margin-bottom:18px}
+.telegram-btn{
+  display:flex;align-items:center;gap:14px;text-decoration:none;color:white;
+  background:linear-gradient(110deg,#0b84f3,#0877df,#16a6ff);
+  border:2px solid #66c9ff;border-radius:22px;padding:16px 20px;
+  box-shadow:0 8px 25px rgba(0,137,255,.3);position:relative;overflow:hidden;
+  animation:glow 1.8s ease-in-out infinite;
+}
+.telegram-icon{
+  flex:0 0 58px;width:58px;height:58px;border-radius:50%;background:white;color:#1384e8;
+  display:grid;place-items:center;font-size:29px;font-weight:900;
+}
+.btn-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.btn-text strong{font-size:clamp(18px,4vw,29px)}
+.btn-text small{font-size:clamp(12px,2.6vw,18px);word-break:break-all;opacity:.95}
+.spark{font-size:48px;margin-left:auto;animation:blink .8s infinite alternate}
+@keyframes glow{0%,100%{box-shadow:0 8px 25px rgba(0,137,255,.28),0 0 0 rgba(0,190,255,0)}50%{box-shadow:0 8px 30px rgba(0,137,255,.5),0 0 22px rgba(0,190,255,.35)}}
+@keyframes blink{from{opacity:.45;transform:scale(.9)}to{opacity:1;transform:scale(1.08)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.stats div{background:white;border-radius:18px;padding:17px 8px;text-align:center;box-shadow:0 5px 18px rgba(0,50,100,.08);display:flex;flex-direction:column}
+.stats b{font-size:30px}.stats strong{font-size:30px;color:#086ee5}.stats span{font-weight:700;font-size:17px}
+.intro{text-align:center;margin:25px 0 18px}.intro h2{font-size:32px;margin:0}.intro h2 span{color:#0d73e5}.intro h3{font-size:26px;margin:7px 0}.intro p{color:#777;font-weight:600}
+.limited{text-align:center;background:#fff2d6;color:#ef5b19;border-radius:22px;padding:14px;font-weight:900;font-size:20px;margin:18px 0}
+.features{display:grid;gap:12px;margin-bottom:20px}
+.features article{display:flex;gap:16px;align-items:center;background:#fff;border-radius:18px;padding:16px;box-shadow:0 5px 18px rgba(0,50,100,.07)}
+.features article>span{font-size:32px}.features b{display:block;font-size:20px}.features small{display:block;color:#7a8292;margin-top:4px;font-size:15px}
+.bottom{margin-top:8px}
+footer{text-align:center;color:#6f7785;padding:16px 8px 0;font-size:13px}
+footer h4{margin:0 0 5px;font-size:16px}.footer p{margin:0}
+footer nav{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:14px}
+footer a{color:#0a70df;text-decoration:none;font-weight:700}
+@media(max-width:600px){
+  .hero-card{padding:14px 10px 20px;border-radius:20px}
+  .stats{gap:7px}.stats div{padding:12px 4px}.stats b{font-size:24px}.stats strong{font-size:23px}.stats span{font-size:13px}
+  .telegram-btn{padding:12px}.telegram-icon{width:48px;height:48px;flex-basis:48px;font-size:24px}.spark{font-size:36px}
+  .intro h2{font-size:26px}.intro h3{font-size:20px}
+}
